@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Spectral', serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+#wrapper {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background: rgba(90, 88, 88, .5);
+}
+
+#nav {
+    list-style: none;
+    float: right;
+    position: relative;
+}
+
+#nav li {
+    float: left;
+    display: block;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    color: white;
+    border-left: 1px inline rgba(225, 225, 225, .5);
+    border-right: 1px inline rgba(225, 225, 225, .5);
+}
+
+#span {
+    height: 5px;
+    width: 100px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    -wekit-transition: all .1s;
+}
+
+#myCarousel {
+    top: 40px;
+    height: 85%;
+}
+
+#Home {
+    background-image: url(photos/cs_cover.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+#intro_bio {
+    max-width: calc(35em * 0.7);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#profile_header {
+    padding-top: 25px;
+    padding-left: 2%;
+    font-weight: 200;
+    font-size: 19px;
+}
+
+#profile_pic {
+    /* Rotate div */
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -webkit-transform: rotate(270deg);
+    /* Safari 3-8 */
+    transform: rotate(270deg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#social_media{
+    padding-left: 5%;
+}
+
+#Skills {
+    padding-top: 2%;
+}

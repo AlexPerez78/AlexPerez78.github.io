@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alex Perez</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="resources/css/decoration.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Controls how page is scrolled when going through layout-->
+    <!--Font Used-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i|Spectral" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+</head>
+
+<body class="navbar-header page-scroll" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top page-scroll" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand page-scroll" href="#Home">Alex Perez</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse navbar-main-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="#Home">Home</a></li>
+                        <li><a class="page-scroll" href="#AboutMe">About Me</a></li>
+                        <li><a class="page-scroll" href="#Skills">Skills</a></li>
+                        <li><a class="page-scroll" href="#Portfolio">Portfolio</a></li>
+                        <li><a class="page-scroll" href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Home">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" height="100%" width="100%">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" height="100%" width="100%">
+                <li data-target="#myCarousel" data-slide-to="0" class="active" height="100%" width="100%"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" height="100%" width="100%">
+                <div class="item active" height="100%" width="100%">
+                    <img src="resources/css/photos/cs_cover.jpeg" alt="main" height="100%" width="100%">
+                    <div class="carousel-caption" id="text_box">
+                        <div class="hero-text-box">
+                            <h1 class="animated fadeInDown delay-15s" style="font-size:40px">Software Developer</h1>
+                            <p class="subtitle animated fadeInUp delay-15s" id="intro_bio">I HAVE A LARGE INTREST IN SOFTWARE DEVELOPMENT AND LOVE TO WORK UNDER NEW PROJECTS. I AM COMPLETLY FOND OF FULL STACK DEVELOPMENT AND MOBILE DEVELOPMENT</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="resources/css/photos/mobile.jpg" alt="mobile" height="100%" width="100%">
+                    <div class="carousel-caption" id="text_box">
+                        <div class="hero-text-box">
+                            <h1 class="animated rotateInDownRight delay-15s" style="font-size:40px">Android Developer</h1>
+                            <p class="subtitle animated fadeInUp delay-15s" id="intro_bio">NATIVE ANDROID DEVELOPMENT HAS CAPUTRED MY ATTENTION EVER SINCE I FIRST LAID HANDS ON IT.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="resources/css/photos/track.jpg" alt="track" height="100%" width="100%">
+                    <div class="carousel-caption" id="text_box">
+                        <div class="hero-text-box">
+                            <h1 class="animated zoomInRight delay-15s" style="font-size:40px">Athletic</h1>
+                            <p class="subtitle animated jackInTheBox delay-15s" id="intro_bio">POST COLLEGIATE TRACK DISTANCE RUNNER, HELPED GAVE ME HARD WORK ETHIC IN ORDER TO ACHIEVE A GOAL OR TASK. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="AboutMe" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 wp1 animated fadeIn">
+                        <h2 id="about_me_header">
+                            <a href="https://github.com/AlexPerez78" target="_blank"> 
+                                <img src="resources/css/photos/git.svg" style="width:42px;height:42px;border:0;">
+                            </a> A Little Bit About Me
+
+                            <a href="https://www.linkedin.com/in/alex-perez-13728ba2/" target="_blank"> 
+                                <img src="resources/css/photos/linkedin.png" style="width:42px;height:42px;border:0;">
+                            </a>
+                        </h2>
+
+                        <img src="/Portfolio/resources/css/photos/profile_circle.jpg" id="profile_pic">
+                        <p id="about_me_text">
+                            Hey everyone! My Name is Alex and im a Software developer with a strong passion in Native Android Development and mobile architecture. I'm currently a recent graduate from <a href="http://www.calstatela.edu/" target="_blank">California State University, Los Angeles</a> and receieved my Bachlors Degree in <a href="http://www.calstatela.edu/ecst/cs/student-learning-outcomes-undergraduate-bscs" target="_blank">Computer Science</a>. I'm curently looking for a job where I can channel my creativty and love for Mobile Development and creating elegant software and engage in new experiences.
+                            <br>
+                            <br> Hobbies: When im not developing, I enjoy high level competetion in <a href="http://lagoldeneagles.com/roster.aspx?rp_id=1835" target="_blank">running</a>, cycling and triathlon. As well as teaching children Mathematics and Software development through <a href="https://www.care.com/p/alexp1576/tu" target="_blank">Care</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="row animated delay-5s lightSpeedIn">
+                    <div class="column" style="background-color:#EAECEE;">
+                        <img class="animated delay-15s tada" src="resources/css/photos/computer.png">
+                        <br>
+                        <p>Software Developer</p>
+                    </div>
+                    <div class="column" style="background-color:#EAECEE;">
+                        <img class="animated delay-15s tada" src="resources/css/photos/android.png">
+                        <br>
+                        <p>Android Developer</p>
+                    </div>
+                    <div class="column" style="background-color:#EAECEE;">
+                        <img class="animated delay-15s tada" src="resources/css/photos/runner.png">
+                        <br>
+                        <p>Distance Runner</p>
+                    </div>
+                </div>
+                <!--<div class="jumbotron vertical-center">
+                    <div>
+                        <h3>Summary:</h3>
+                         <h4>Self Proclamations:</h4> 
+                        <div class="tldr-proc">
+                            <div class="tldr-icon" id="tldr-keyboard"><i class="fa fa-keyboard-o"></i></div>
+                            <h5>Web Developer</h5>
+                        </div>
+                        <div class="tldr-proc">
+                            <div class="tldr-icon"><i class="fa fa-pencil"></i></div>
+                            <h5>UX Enthusiast</h5>
+                        </div>
+                        <div class="tldr-proc">
+                            <div class="tldr-icon"><i class="fa fa-tree"></i></div>
+                            <h5>Snowboarder</h5>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Skills" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-10 col-md-offset-1 text-center wp3 animated slideInDown">
+                        <h2>Experience</h2>
+                        <p class="text-center" id="skills_bio">I've been doing android development for about 2 years now, and I'm always ready to
+                            <br>learn more in the growing field of mobile development</p>
+                    </div>
+
+                    <div class="col-sm-offset-1 col-xs-12 col-sm-6 col-md-6 skills-section wp3 animated fadeIn">
+                        <h3 class="animated slideInLeft" id="skills_titles">Some technologies I've worked with:</h3>
+                        <div class="row animated slideInLeft">
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/html5.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/css3.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/javascript.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/java.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/kotlin.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/android.ico" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/swift.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/mysql.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/bootsrap.png" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/github.svg" id="skill_icon">
+                            </div>
+                            <div class="col-xs-3 col-sm-2 col-md-2 skill-icon">
+                                <img class="img-responsive" src="resources/css/photos/languages_Icons/eclipse.png" id="skill_icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-3 employment wp3 animated fadeIn">
+                        <div class="text-center places-worked animated slideInRight">
+                            <h3 id="skills_titles">Where Am I Currently?</h3>
+                            <a href="http://www.aztlanathletics.org/102016/" target="_blank">
+                                <img id="aztlan-logo" src="resources/css/photos/current_work/aztlan_athletics_logo.png" class="img-ipad-cover img-responsive" alt="Aztlan Athletics LLC.">
+                            </a>
+                            
+                            <a href="https://www.ymcasgv.org/" target="_blank">
+                                <img id="ymca-logo" src="resources/css/photos/current_work/ymca-logo-orange.png" class="img-ipad-cover img-responsive" alt="YMCA SGV.">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /col-->
+            </div>
+            <!-- /row -->
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="text-center">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Need My Resume?</h2>
+                            <div id="resume-button">
+                                <a class="resume-btn wp4 animated bounceIn" href="alexperezresume.pdf" target="_blank">Grab A Copy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+        </div>
+    </section>
+
+    <section id="Portfolio">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Projects Done/Ongoing</h2>
+                <h5 class="coming-soon">(more coming soon)</h5>
+            </div>
+            <!--Att Machine Learning-->
+            <div class="row portfolio-row">
+                <div class="portfolio-item-wrapper wp5 animated fadeIn">
+                    <div class="portfolio-item" data-toggle="modal" href="#attmachine">
+                        <div class="portfolio-overlay"></div>
+                        <div class="links">
+                            <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <img src="resources/css/photos/modals/main_screen.png" alt="image">
+                        <div class="portfolio-info">
+                            <h3>Machine Learning For Signal Quality Monitoring</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--Kotlin Youtube-->
+                <div class="portfolio-item-wrapper wp5 animated fadeIn">
+                    <div class="portfolio-item" data-toggle="modal" href="#kotlinyoutube">
+                        <div class="portfolio-overlay"></div>
+                        <div class="links">
+                            <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <img src="resources/css/photos/modals/youtube.png" alt="image">
+                        <div class="portfolio-info">
+                            <h3>Kotlin Youtube</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Duel App-->
+                <div class="portfolio-item-wrapper wp5 animated fadeIn">
+                    <div class="portfolio-item" data-toggle="modal" href="#duelapp">
+                        <div class="portfolio-overlay"></div>
+                        <div class="links">
+                            <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <img src="resources/css/photos/modals/duelapp.png" alt="image">
+                        <div class="portfolio-info">
+                            <h3>Pocket Duel Manager</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Anagram Game-->
+                <div class="portfolio-item-wrapper wp5 animated fadeIn">
+                    <div class="portfolio-item" data-toggle="modal" href="#anagram">
+                        <div class="portfolio-overlay"></div>
+                        <div class="links">
+                            <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <img src="resources/css/photos/modals/ghost_main.png" alt="image">
+                        <div class="portfolio-info">
+                            <h3>Anagram Game</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Puzzle Game-->
+                <div class="portfolio-item-wrapper wp5 animated fadeIn">
+                    <div class="portfolio-item" data-toggle="modal" href="#puzzle">
+                        <div class="portfolio-overlay"></div>
+                        <div class="links">
+                            <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                        </div>
+                        <img src="resources/css/photos/modals/puzzle_main.png" alt="image">
+                        <div class="portfolio-info">
+                            <h3>Puzzle Game</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--************************** PORTFOLIO MODALS **************************-->
+    <!-- AT&t MODAL -->
+    <div class="modal fade" id="attmachine" tabindex="-1" role="dialog" aria-labelledby="attmachine" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Alarm Notification for Technician (A.N.T)</h4>
+                    <h5  class="modal-title-description">Sponsored By AT&T</h5>
+                    <h6 class="modal-title-description">Android App</h6>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive img-centered" src="resources/css/photos/modals/main_screen.png" alt="">
+                    </p>
+                    <p class="modal-description">A.N.T. is a native Android application that was built for At&t/Direct TV technicians for my senior design project. We were instructed to build an application where technicians can relay on a mobile system to recieve phone notifications on which ground station would be down. This was used with several programs such as Jersey and Mongo in order to recieve real upstream data that these sattelties would disperse. <br>The main goal of the application was to offer a better solution on how quick a technicians can address a problem with the station as more time passes by would create angry customers.</p> <br>
+                    <p class="modal-description">Languages/Tools Used: Java, REST, Jersey, Mongo DB, Python, Pandas/Scikit-learn</p>
+                    <p class="visit"><a href="https://csns.calstatela.edu/department/cs/project/view?id=5530047" target="_blank" id="visit-btn">Visit Site</a> or <a href="https://github.com/agarcia94/SignalMonitoring" target="_blank" id="visit-btn">View Source</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Kotlin Youtube -->
+    <div class="modal fade" id="kotlinyoutube" tabindex="-1" role="dialog" aria-labelledby="kotlinyoutube" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Kotlin Youtube</h4>
+                    <h6 class="modal-title-description">Android App</h6>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive img-centered" src="resources/css/photos/modals/youtube_main.png" alt="">
+                    </p>
+                    <p class="modal-description">Kotlin Youtube is a Native Android application developed in Kotlin that was created in order to help better understand the syntax and context of Androids new Programming Language. I wanted to build this application because it would give me a challenge with a new language and discover how Kotlin differs from Java in not only developing applications but performance as well. The application is a simple replicate of youtube moble front end using Json, RESTFUL, and third party libraries. <br>The project gave me a perfect understanding of Kotlin and how it differs from java as well as the benefits on how fluid it is when compared to Java.</p><br>
+                    <p class="modal-description">Languages Used: Java, Kotlin, Android Core, REST, JSON, and Third PArty Libraries</p>
+                    <p class="visit"><a href="http://webdevspring2016-chiangbrittany.rhcloud.com/project/client/#/login" target="_blank" id="visit-btn">Visit Site</a> or <a href="https://github.com/AlexPerez78/KotlinYouTube" target="_blank" id="visit-btn">View Source</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Pocket Duel Manager-->
+    <div class="modal fade" id="duelapp" tabindex="-1" role="dialog" aria-labelledby="duelapp" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Pocket Duel Manager</h4>
+                    <h6 class="modal-title-description">Android App</h6>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive img-centered" src="resources/css/photos/modals/duelapp.png" alt="">
+                    </p>
+                    <p class="modal-description">Pocket Duel Manager is a native Android application developed to give Yu-Gi-Oh players a quick access into a calculator and banlist as well by having thier own account to keep track of points and creating "tournaments" within a group. I wanted to create this application due to the fact that this app does not exist within the market and something viable to use wihtin this popular card trading game; not having to fiddle with different apps and research online can save the trouble of many users <br>This projet gave me a better understanding in developing a more well defined program, neat code and using third party libraries.</p> <br>
+                    <p class="modal-description">Languages/Tools Used: Java, REST, JSON, Third-Party Libraries</p>
+                    <p class="visit"><a href="http://webdevspring2016-chiangbrittany.rhcloud.com/project/client/#/login" target="_blank" id="visit-btn">Visit Site</a> or <a href="https://github.com/AlexPerez78/KotlinYouTube" target="_blank" id="visit-btn">View Source</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Anagram-->
+    <div class="modal fade" id="anagram" tabindex="-1" role="dialog" aria-labelledby="anagram" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Anagram Game</h4>
+                    <h6 class="modal-title-description">Android App</h6>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive img-centered" src="resources/css/photos/modals/ghost_main.png" alt="">
+                    </p>
+                    <p class="modal-description">Anagram is a native Android application that was developed in Java for my Android class that was taught by Google Engineers. This purpose of this project was to create an Anagram application using the Android core libraries as well by using Binary Search tree to reach responsive performance. <br>The project gave me a perfect understanding of Kotlin and how it differs from java as well as the benefits on how fluid it is when compared to Java.</p>
+                    <p class="visit"><a href="http://webdevspring2016-chiangbrittany.rhcloud.com/project/client/#/login" target="_blank" id="visit-btn">Visit Site</a> or <a href="https://github.com/AlexPerez78/KotlinYouTube" target="_blank" id="visit-btn">View Source</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Puzzle-->
+    <div class="modal fade" id="puzzle" tabindex="-1" role="dialog" aria-labelledby="puzzle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Anagram Game</h4>
+                    <h6 class="modal-title-description">Android App</h6>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <img class="img-responsive img-centered" src="resources/css/photos/modals/puzzle_main.png" alt="">
+                    </p>
+                    <p class="modal-description">Kotlin Youtube is a Native Android application developed in Kotlin that was created in order to help better understand the syntax and context of Androids new Programming Language. I wanted to build this application because it would give me a challenge with a new language and discover how Kotlin differs from Java in not only developing applications but performance as well. The application is a simple replicate of youtube moble front end using Json, RESTFUL, and third party libraries. <br>The project gave me a perfect understanding of Kotlin and how it differs from java as well as the benefits on how fluid it is when compared to Java.</p>
+                    <p class="visit"><a href="http://webdevspring2016-chiangbrittany.rhcloud.com/project/client/#/login" target="_blank" id="visit-btn">Visit Site</a> or <a href="https://github.com/AlexPerez78/KotlinYouTube" target="_blank" id="visit-btn">View Source</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--********************************************************************************-->
+
+    <section id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <div class="email-icon"><i class="fa fa-paper-plane-o wp6"></i></div>
+                    <h2>Want To Chat?</h2>
+                    <p>Feel free to send me an email to ask any questions or drop by and chat!</p>
+                    <p style="margin-top:40px;">
+                        <a class="mail-btn wp4 animated bounceIn" id="resume-button" href="mailto:aperezcarmona94@gmail.com" target="_blank">Send An Email</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="list-inline social-buttons animated fadeIn">
+                            <!-- Facebook Button -->
+                            <li><a id="facebook" href="https://www.facebook.com/APerez994" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <!-- Instagram Button -->
+                            <li><a id="instagram" href="https://www.instagram.com/curlycarmona/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <!-- GitHub Button -->
+                            <li><a id="github" href="https://github.com/AlexPerez78" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <!-- LinkedIn Button -->
+                            <li><a id="linkedin" href="https://www.linkedin.com/in/alex-perez-13728ba2" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="page-scroll">
+                            <a id="to-top" class="page-scroll" href="#Home">
+                                <img id="rocket" src="resources/css/photos/spaceship.png">
+                            </a>
+                        </div>
+                        <div class="copyright">
+                            <p><i class="fa fa-copyright"></i> Alex Perez 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container -->
+        </footer>
+
+</body>
+
+</html>
