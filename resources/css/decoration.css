@@ -50,6 +50,13 @@ body {
     font-size: 16px;
 }
 
+@media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+        #Home{
+            
+        }    
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*About Me Section*/
 
@@ -76,14 +83,13 @@ body {
     height: 170px;
     width: 170px;
 }
-
+/*
 .jumbotron {
-
     width: 50%;
-}
+}*/
 
 /*If hits lower screen real estate, stack upon one another*/
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
         width: 50%;
     }
@@ -121,6 +127,8 @@ body {
 
 #skill_icon {
     padding-top: 50px;
+    padding-bottom: 15px;
+    height: 120px;
 }
 
 #skills_titles {
@@ -128,11 +136,62 @@ body {
     font-size: 20px;
 }
 
+}
+
+@media screen and (max-width: 768px) {
+    .skills-section h3 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .skills-section .skill-icon {
+        padding-bottom: 0;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-bar-container {
+        width: 100%;
+        min-width: 100px;
+    }
+    .employment h3 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    img#ymca-logo {
+        width: 200px;
+    }
+    img#aztlan-logo {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #Skills {
+        padding: 200px 0px;
+    }
+    #Skills p {
+        padding-bottom: 20px;
+    }
+    .skills,
+    .employment {
+        display: block;
+        width: 100%;
+    }
+    img#ymca-logo {
+        width: 120px;
+    }
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*Resume Section*/
 
 #resume {
-    padding-top: 10px;
+    padding-top: 30px;
     height: 200px;
     background: url(photos/dellxps13.jpg);
     background-size: cover;
@@ -165,6 +224,13 @@ a.resume-btn:active {
     border: 2px solid #ccc;
     background-color: rgba(254, 254, 254, 0.2);
     padding: 10px 30px;
+}
+
+@media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+        #resume{
+            padding: 100px 0px;
+        }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -560,7 +626,7 @@ ul.social-buttons li a:active {
 }
 
 #to-top-copy {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Spectral', sans-serif;
     font-size: 12px;
     margin: 0 auto;
     opacity: 0;
@@ -572,7 +638,7 @@ ul.social-buttons li a:active {
 }
 
 .copyright p {
-    font-family: "Lato", sans-serif;
+    font-family: "Spectral", sans-serif;
     font-size: 14px;
 }
 
