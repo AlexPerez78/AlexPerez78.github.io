@@ -50,6 +50,12 @@ body {
     font-size: 16px;
 }
 
+@media screen and (max-width: 600px) {
+    #Home{
+        
+    }
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*About Me Section*/
 
@@ -86,6 +92,9 @@ body {
 @media (max-width: 600px) {
     .column {
         width: 50%;
+    }
+    #git_link,#linkedin_link{
+        visibility: hidden;
     }
 }
 
@@ -126,6 +135,61 @@ body {
 #skills_titles {
     font-weight: 400;
     font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-section h3 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+}
+
+.skills-section .skill-icon {
+    padding-bottom: 15px;
+    height: 120px;
+}
+
+@media screen and (max-width: 360px) {
+    .skills-section .skill-icon {
+        padding-bottom: 0;
+        height: 100px;
+    }
+}
+
+/*Places Worked*/
+@media screen and (max-width: 768px) {
+    .skills-bar-container {
+        width: 100%;
+        min-width: 100px;
+    }
+    .employment h3 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    img#aztlan-logo {
+        width: 200px;
+    }
+    img#ymca-logo {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #experience {
+        padding: 60px 0px;
+    }
+    #experience p {
+        padding-bottom: 20px;
+    }
+    .skills,
+    .employment {
+        display: block;
+        width: 100%;
+    }
+    img#ymca-logo {
+        width: 120px;
+    }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
