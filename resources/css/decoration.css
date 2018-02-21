@@ -54,6 +54,8 @@ body {
     #Home{
         
     }
+    
+    
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -96,6 +98,15 @@ body {
     #git_link,#linkedin_link{
         visibility: hidden;
     }
+}
+
+@media
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+        #AboutMe{
+            height: 125vh;
+            padding-bottom: 10px;
+        }
 }
 
 /* Create three equal columns that floats next to each other */
@@ -229,6 +240,14 @@ a.resume-btn:active {
     border: 2px solid #ccc;
     background-color: rgba(254, 254, 254, 0.2);
     padding: 10px 30px;
+}
+
+@media
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+        #resume{
+            padding-top: 35px;
+        }
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
